@@ -13,9 +13,5 @@
 	•	After importing the data, you can run the queries provided in the 2024201076_q1_A.sql file.
     •   Execute each query from the <roll_number>_q1_A.sql file by copying and pasting it into the MySQL prompt.
 
-# ASSUMPTIONS
-
-# B) Retrieve the 10 most expensive products, skipping the first 5
-- assumed MSRP as the expense of the product, so higher the amount of MSRP --> more expensive is the product
 
 

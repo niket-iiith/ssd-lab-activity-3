@@ -1,3 +1,5 @@
-SELECT DISTINCT o.city
-FROM offices o
-JOIN customers c ON o.city = c.city;
+SELECT city
+FROM offices
+INTERSECT
+SELECT city
+FROM customers;

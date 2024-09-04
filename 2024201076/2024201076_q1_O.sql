@@ -1,3 +1,7 @@
-SELECT DISTINCT c.customerNumber, c.customerName
+SELECT customerNumber, customerName
 FROM customers c
-JOIN orders o ON c.customerNumber = o.customerNumber;
+WHERE EXISTS (
+    SELECT 1
+    FROM orders o
+    WHERE o.customerNumber = c.customerNumber
+);

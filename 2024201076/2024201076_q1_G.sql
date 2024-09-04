@@ -1,4 +1,6 @@
-SELECT c.customerName
+SELECT customerName
 FROM customers c
-LEFT JOIN orders o ON c.customerNumber = o.customerNumber
-WHERE o.orderNumber IS NULL;
+WHERE customerNumber NOT IN (
+    SELECT customerNumber
+    FROM orders
+);

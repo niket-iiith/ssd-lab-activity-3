@@ -1,4 +1,7 @@
-SELECT e.employeeNumber, e.firstName, e.lastName
+SELECT employeeNumber, firstName, lastName
 FROM employees e
-LEFT JOIN employees m ON e.employeeNumber = m.reportsTo
-WHERE m.employeeNumber IS NULL;
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM employees m
+    WHERE m.reportsTo = e.employeeNumber
+);
