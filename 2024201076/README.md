@@ -10,8 +10,5 @@
 	•	Import the provided Q1.sql file into your MySQL database to set up the schema and populate the tables.
 
 2. Executing the Queries:
-	•	After importing the data, you can run the queries provided in the 2024201076_q1_A.sql file.
-    •   Execute each query from the <roll_number>_q1_A.sql file by copying and pasting it into the MySQL prompt.
-
-
-
+	•	After importing the data, you can run the queries provided in the 2024201076_q1_{A..T}.sql file.
+    •   Execute each query from the 2024201076_q1_{A..T}.sql file by copying and pasting it into the MySQL prompt.
